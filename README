@@ -1,0 +1,50 @@
+README for Algorithm::GenerateSequence 0.01
+
+=head1 NAME
+
+Algorithm::GenerateSequence - a sequence generator
+
+=head1 SYNOPSIS
+
+ my $gen = Algorithm::GenerateSequence->new(
+    [qw( one two three )], [qw( hey bee )],
+ );
+ print $gen->next, "\n"; # onehey
+ print $gen->next, "\n"; # onebee
+ print $gen->next, "\n"; # twohey
+ print $gen->next, "\n"; # twobee
+ ...
+
+
+
+=head1 INSTALLATION
+
+ perl Build.PL
+ perl Build test
+
+and if all goes well
+
+ perl Build install
+
+=head1 HISTORY
+
+What changed over the last 3 revisions
+
+=over
+
+=item 0.01	Monday 8th September, 2003
+
+	Initial CPAN release
+=back
+
+=head1 AUTHOR
+
+Richard Clamp <richardc@unixbeard.net>
+
+=head1 COPYRIGHT
+
+Copyright (C) 2003 Richard Clamp.  All Rights Reserved.
+
+This module is free software; you can redistribute it and/or modify it
+under the same terms as Perl itself.
+
